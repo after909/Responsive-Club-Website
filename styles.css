@@ -1,0 +1,423 @@
+html, body {   
+    margin: 0 auto;
+    background-color: #080708;
+    font-size: 16px;
+}
+/*header*/
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #f0eff4;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080708;
+    color: #FDCA40;
+}
+
+header .title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+header .icon {
+  height: 80px;
+  width: 80px;
+}
+
+header h1 {
+    padding: 0 1.2rem;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    //font-family: 'Sue Ellen Francisco', cursive;
+    padding: 0 1.2rem;
+    font-size: 2.5rem;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    margin-right: 2rem;
+}
+nav a {
+    color: #F0EFF4;
+    text-decoration: none;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 1.8rem;
+}
+
+nav a:hover {
+    color: #390099;
+    transition-duration: 1s;
+}
+
+#compact-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1048px) {
+  header h1 {
+    font-size: 2rem;
+    padding: 0 0.75rem;
+  }
+  header .title {
+    padding: 0 0.5rem;
+  }
+  nav #compact-menu {
+    display: none;
+  }
+  nav ul {
+    display: inline-flex;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+    padding: 0 0.75rem;
+  }
+  header .title {
+    padding: 0 0.5rem;
+  }
+  header .icon {
+    height: 60px;
+    width: 60px;
+  }
+  nav {
+    margin-right: 1rem;
+  }
+  nav #compact-menu {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header h1 {
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+  }
+  header .title {
+    padding: 0 0.5rem;
+  }
+  header .icon {
+    height: 50px;
+    width: 50px;
+  }
+  nav {
+    margin-right: 1rem;
+  }
+  nav #compact-menu {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+
+
+/*Introduction*/
+.banner {
+  background-image: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  opacity: 0.9;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner h1 {
+    color: #F0EFF4;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.statement {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.statement h2 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: #F0EFF4;
+    
+}
+.statement p {
+    width: 50%;
+    text-align: justify;
+    line-height: 2.5;
+    font-family: 'Montserrat', sans-serif;
+    color: #F0EFF4 ;
+}
+
+@media only screen and (max-width: 768px)  { 
+  .banner {
+    width: 100%;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  .statement h2 {
+    font-size: 2.5rem;
+  }
+  .statement p {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .banner {
+    width: 100%;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  .statement h2 {
+    font-size: 2.5rem;
+  }
+  .statement p {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+
+
+/*Activities*/
+#activities {
+    background-color: #336699;
+    margin: 32px auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.activities-container {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: #F0EFF4;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.images {
+    width: 640px;
+    height: 426px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    //flex-grow: 1;
+    border: 2px solid #F0EFF4;
+    margin: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.text:hover {
+  background-color: rgba(48, 54, 50,.2);
+  transition-duration: 1s;
+}
+
+.text {
+  background-color: rgba(48, 54, 50,.6);
+  color: #f0eff4;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#films{
+   background-image: url(https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#events{
+   background-image: url(https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#discussion{
+   background-image: url(https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1116&q=80);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+ #film-courses {
+   background-image: url(https://images.unsplash.com/photo-1526007413281-c202e21eedf3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+ #photo-courses {
+   background-image: url(https://images.unsplash.com/photo-1452587925148-ce544e77e70d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+ #illumniation-courses {
+   background-image: url(https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .activities-container {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .activities-container {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+
+}
+
+/*Contact*/
+.contact{
+  
+}
+.contact h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #f0eff4;
+}
+
+address {
+    text-align: center;
+    color: #f0eff4;
+    min-height: 520px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+address a {
+    text-decoration: none;
+    color: #f0eff4;
+    
+}
+
+address a:hover {
+    color: #390099;
+    transition-duration: 1s;
+}
+
+address img {
+  padding: 1.1rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+  address {
+    min-height: 200px;
+  }
+  address img{
+    width: 85%;
+    padding: 1.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+  address {
+    min-height: 200px;
+  }
+  address img{
+    display: none;
+    padding: 0;
+  }
+}
+
+/*Footer*/
+footer {
+    background-color: #080708;
+    border-top: 1px solid #f0eff4;
+    height: 60px;
+    opacity: 0.9;
+}
+
+footer .credits {
+    text-align: right;
+    color: #f0eff4;
+    margin-right: 2%;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 1.2rem;
+}
+
+footer .credits p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .credits p a {
+    text-decoration: none;
+    color: #f0eff4;
+}
+
+footer .credits p a:hover {
+    transition-duration: 2s;
+    color: #390099;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .credits {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+
+@media only screen and (max-width: 320px) {
+  footer .credits {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
